@@ -1,0 +1,12 @@
+D:\VisualStudio\Test\Test\bin\Debug\Test.exe.config
+D:\VisualStudio\Test\Test\bin\Debug\Test.exe
+D:\VisualStudio\Test\Test\bin\Debug\Test.pdb
+D:\VisualStudio\Test\Test\bin\Debug\WebDriver.dll
+D:\VisualStudio\Test\Test\bin\Debug\WebDriver.Support.dll
+D:\VisualStudio\Test\Test\bin\Debug\WebDriver.xml
+D:\VisualStudio\Test\Test\bin\Debug\WebDriver.Support.xml
+D:\VisualStudio\Test\Test\obj\Debug\Test.csprojAssemblyReference.cache
+D:\VisualStudio\Test\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Test\Test\obj\Debug\Test.csproj.CopyComplete
+D:\VisualStudio\Test\Test\obj\Debug\Test.exe
+D:\VisualStudio\Test\Test\obj\Debug\Test.pdb
