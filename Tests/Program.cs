@@ -15,7 +15,10 @@ namespace Test
         static void Main(string[] args)
 
         {
-            CommonDriver driver = new CommonDriver();
+            CommonDriver.driver = new ChromeDriver();
+
+            LoginPage LoginstepsObj = new LoginPage();
+            LoginstepsObj.Loginsteps(CommonDriver.driver);
 
             //Steps to Navigate to TMpage
             HomePage homeObj = new HomePage();
@@ -24,11 +27,11 @@ namespace Test
             //Steps to create a TM
             TMpage tmObj = new TMpage();
             tmObj.AddTM(CommonDriver.driver);
-        }
 
-         
-        
-        
+            //Steps to EditTM 
+            TMpage tmObj1 = new TMpage();
+            tmObj1.EditTM(CommonDriver.driver);
+        }
 
     }
 }

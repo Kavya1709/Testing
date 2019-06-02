@@ -39,18 +39,21 @@ namespace Test.Pages
             //Click on Save button
             driver.FindElement(By.Id("SaveButton")).Click();
 
+            Thread.Sleep(1000);
 
-            //Navigate to last page
-            IWebElement MyRecord = driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[4]/ul/li[2]/span"));
-            MyRecord.Click();
+
         }
 
 
         public void EditTM(IWebDriver driver)
         {
 
+            //Navigate to last page
+            IWebElement MyRecord = driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[4]/a[4]/span"));
+            MyRecord.Click();
+
             //Click on Edit button
-            driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[3]/table/tbody/tr[3]/td[5]/a[1]")).Click();
+            driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[3]/div[2]/table/tbody/tr[8]/td[5]/a[1]")).Click();
 
             //Clear text in Code field
             driver.FindElement(By.XPath("//*[@id='Code']")).Clear();
@@ -65,7 +68,8 @@ namespace Test.Pages
             driver.FindElement(By.XPath("//*[@id='TimeMaterialEditForm']/div/div[4]/div/span[1]/span/input[1]")).Clear();
 
             //Enter value in price per unit text box
-            driver.FindElement(By.XPath("//*[@id='TimeMaterialEditForm']/div/div[4]/div/span[1]/span/input[1]")).SendKeys("8995");
+            IWebElement Price = driver.FindElement(By.XPath("//*[@id='TimeMaterialEditForm']/div/div[4]/div/span[1]/span/input[1]"));
+            Price.SendKeys("8995");
 
             //Click on Save button
             driver.FindElement(By.XPath("//*[@id='SaveButton']")).Click();
